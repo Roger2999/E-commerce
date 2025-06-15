@@ -1,0 +1,47 @@
+.container-flex-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: stretch;
+  justify-content: start;
+width: 100%;
+  margin-top: 2rem;
+  max-width: 1500px;
+}
+
+.container-box {
+  flex: 1;
+  min-width: 300px;
+    max-width: 300px;
+  display: flex;
+}
+
+.card {
+  width: 100%;
+  min-height: 350px;
+  max-height: 100%;
+  background: #f1ebeb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  margin-bottom: 60px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+.card-body{
+margin: auto;
+}
+

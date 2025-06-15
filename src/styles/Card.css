@@ -1,0 +1,13 @@
+.agregar-container{
+    max-width: fit-content;
+    margin: 15px auto;
+}
+.separator-button{
+    max-width: fit-content;
+    margin: auto;
+}
+.cantidad-container{
+   max-width: fit-content;
+   margin: 15px auto;
+
+}
