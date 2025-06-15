@@ -1,12 +1,53 @@
-# React + Vite
+# E-Commerce React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una tienda online desarrollada con React y Vite. Permite explorar productos de hardware y tecnología, agregarlos a un carrito y simular una compra.
 
-Currently, two official plugins are available:
+## Características principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Listado de productos con imágenes, categorías y marcas.
+- Búsqueda y filtrado por nombre y categoría.
+- Carrito de compras con suma, resta y eliminación de productos (utilizando useReducer dentro de un contexto global, esto usando Contex Api).
+- Formulario de checkout simulado (utilizando React Hook Form).
+- Diseño responsive y visual moderno usando Flexbox y Bootstrap.
 
-## Expanding the ESLint configuration
+## Estructura del proyecto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+├── public/
+├── src/
+│   ├── components/         # Componentes reutilizables (Card, NavBar, etc.)
+│   ├── context/            # Contextos de React para productos, carrito y búsqueda
+│   ├── pages/              # Páginas principales (Productos, Carrito)
+│   ├── styles/             # Archivos CSS
+│   └── TiendaApp.jsx       # Componente principal
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## Instalación y uso
+
+1. Clona el repositorio:
+   ```sh
+   git clone <url-del-repo>
+   cd e-commerce
+   ```
+2. Instala las dependencias:
+   ```sh
+   npm install
+   ```
+3. Inicia el servidor de desarrollo:
+   ```sh
+   npm run dev
+   ```
+4. Abre [http://localhost:5173](http://localhost:5173) en tu navegador.
+
+## Buenas prácticas aplicadas
+
+- Componentes reutilizables y desacoplados.
+- Context API para manejo global de estado.
+- Código y estilos organizados por funcionalidad.
+
+## Créditos
+
+- Bootstrap para estilos base.
